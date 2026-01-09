@@ -13,7 +13,7 @@ Education
 ======
 * Ph.D in Physics, Institute for Advanced Study, Tsinghua University, 2025
   * Supervisor: Prof. Hong Yao
-* B.S. in Physics, Department of Physics, Beijing Normal University， 2020
+* B.S. in Physics, Department of Physics, Beijing Normal University, 2020
 
 Work experience
 ======
