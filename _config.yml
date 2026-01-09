@@ -42,7 +42,7 @@ author:
   # semantic         : # URL
   # ssrn             : # URL
   # pubmed           : # URL
-  # researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Shuo-Liu-135?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoiZ2xvYmFsSGVhZGVyIn19"
   # scopus           : # URL
   # zotero           : # URL
 
@@ -51,7 +51,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "ls-iastu"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
