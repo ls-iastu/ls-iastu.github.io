@@ -1,7 +1,7 @@
 ---
 title: "Entanglement Structure and Information Protection in Noisy Hybrid Quantum Circuits"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/number-5
 excerpt: ''
 date: 2024-06-13
