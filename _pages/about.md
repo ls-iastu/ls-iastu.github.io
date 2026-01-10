@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Shuo Liu | Personal Homepage"
+title: Shuo Liu
 author_profile: true
 redirect_from: 
   - /about/
