@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Shuo Liu | Personal Homepage"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Shuo Liu.
+I am currently a Postdoctoral Research Associate at Princeton University.
