@@ -1,7 +1,7 @@
 ---
 title: "Absence of Barren Plateaus in Finite Local-Depth Circuits with Long-Range Entanglement"
 collection: publications
-category: conferences
+category: manuscripts
 permalink: /publication/number-4
 excerpt: ''
 date: 2024-04-09
