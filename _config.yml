@@ -23,7 +23,7 @@ repository               : "ls-iastu/ls-iastu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "ShuoLiu.jpg"
   name             : "Shuo Liu"
   pronouns         : # example: "she/her"  
   bio              : "Postdoc, Princeton University"
