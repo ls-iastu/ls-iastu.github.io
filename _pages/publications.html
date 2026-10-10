@@ -7,7 +7,9 @@ hide_title: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">See all my publications on my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</div>
+  <div class="pub-links">
+    <a class="pub-button" href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar</a>
+  </div>
 {% endif %}
 <div class="pub-note"><span class="pub-mark">*</span> Joint first author &nbsp;&nbsp; <span class="pub-mark">†</span> Corresponding author</div>
 

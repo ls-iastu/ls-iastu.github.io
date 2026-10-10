@@ -11,6 +11,9 @@
   --pub-venue-color   : #374151;
   --pub-mark-color    : #c0392b;
   --pub-card-shadow   : 0 1px 3px rgba(0, 0, 0, 0.08);
+  --pub-btn-bg        : #1e293b;
+  --pub-btn-bg-hover  : #334155;
+  --pub-btn-fg        : #ffffff;
 }
 
 html[data-theme="dark"] {
@@ -22,6 +25,9 @@ html[data-theme="dark"] {
   --pub-venue-color   : #eeeeee;
   --pub-mark-color    : #ff9b8f;
   --pub-card-shadow   : 0 1px 3px rgba(0, 0, 0, 0.35);
+  --pub-btn-bg        : #f1f5f9;
+  --pub-btn-bg-hover  : #ffffff;
+  --pub-btn-fg        : #1e293b;
 }
 
 /* Equal-contribution (asterisk) and corresponding-author (dagger) marks */
@@ -108,4 +114,34 @@ html[data-theme="dark"] {
   margin: 1.1em 0 0.6em;
   font-size: 1.15em;
   color: var(--global-text-color);
+}
+
+/* Google Scholar button above the publication list */
+.pub-links {
+  margin: 0.2em 0 0.9em;
+}
+
+.archive .pub-links a.pub-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  padding: 0.5em 1.05em;
+  border-radius: 10px;
+  background: var(--pub-btn-bg);
+  color: var(--pub-btn-fg);
+  font-weight: 700;
+  font-size: 0.95em;
+  text-decoration: none;
+  box-shadow: var(--pub-card-shadow);
+  transition: background 0.15s ease-in-out;
+
+  &:hover {
+    background: var(--pub-btn-bg-hover);
+    color: var(--pub-btn-fg);
+    text-decoration: none;
+  }
+
+  .ai {
+    font-size: 1.15em;
+  }
 }
