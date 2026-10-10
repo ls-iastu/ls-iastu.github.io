@@ -6,17 +6,32 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-  <div class="pub-note"><span class="pub-mark">*</span> Equal contribution &nbsp;&nbsp; <span class="pub-mark">†</span> Corresponding author</div>
+  <div class="wordwrap">See all my publications on my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</div>
 {% endif %}
+<div class="pub-note"><span class="pub-mark">*</span> Joint first author &nbsp;&nbsp; <span class="pub-mark">†</span> Corresponding author</div>
 
 {% include base_path %}
 
-<!-- Publications grouped by year, newest first. The year comes from each file's `date` field. -->
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "pub", "pub.date | date: '%Y'" %}
+<!--
+  Journal articles: grouped by year (from each file's `date`), newest first.
+  Preprints: files with `category: preprints`, newest first, no year grouping.
+  When a preprint is published, change its category to `manuscripts` and fill in `journal` and `paperurl`.
+-->
+{% assign published = site.publications | where_exp: "p", "p.category != 'preprints'" | sort: "date" | reverse %}
+{% assign preprints = site.publications | where: "category", "preprints" | sort: "date" | reverse %}
+
+<h2 class="pub-section" id="journal-articles">Journal Articles</h2>
+{% assign pubs_by_year = published | group_by_exp: "pub", "pub.date | date: '%Y'" %}
 {% for year in pubs_by_year %}
-  <h2 id="{{ year.name }}">{{ year.name }}</h2><hr />
+  <h3 class="pub-year" id="{{ year.name }}">{{ year.name }}</h3>
   {% for post in year.items %}
     {% include archive-single-publication.html %}
   {% endfor %}
 {% endfor %}
+
+{% if preprints.size > 0 %}
+  <h2 class="pub-section" id="preprints">Preprints</h2>
+  {% for post in preprints %}
+    {% include archive-single-publication.html %}
+  {% endfor %}
+{% endif %}
