@@ -6,6 +6,9 @@ permalink: /publication/number-1
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2025-12-15
 venue: 'Science Bulletin'
+authors: 'Shuo Liu<sup>*</sup>, Hao-Kai Zhang<sup>*</sup>, Shuai Yin, Shi-Xin Zhang, Hong Yao'
+journal: 'Science Bulletin 70 (23), 3991–3996 (2025)'
+arxiv: ''
 slidesurl: ''
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S2095927325010394'
 bibtexurl: ''
