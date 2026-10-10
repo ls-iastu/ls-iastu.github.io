@@ -21,6 +21,11 @@ Academic career
 Presentations and Talks
 ======
 
+### 2026
+
+* APS March Meeting 2026, Mar. 2026
+  * Hilbert space fragmentation and exact solutions in the 2D infinite-*U* Hubbard model
+
 ### 2025
 
 * The 8th National Conference on Statistical Physics and Complex Systems, Ningbo, Jul. 2025
