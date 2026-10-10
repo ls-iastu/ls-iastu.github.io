@@ -30,7 +30,7 @@ Presentations and Talks
 
 * The 8th National Conference on Statistical Physics and Complex Systems, Ningbo, Jul. 2025
   * Symmetry restoration and quantum Mpemba effect in chaotic and localization systems
-* Shanghai University, Jun. 2025
+* Physics Department Seminar, Shanghai University, Jun. 2025
   * Symmetry restoration and quantum Mpemba effect in chaotic and localization systems
 * TDLI Quantum Seminar, Shanghai Jiao Tong University, Jun. 2025
   * Symmetry restoration and quantum Mpemba effect in chaotic and localization systems

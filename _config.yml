@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Shuo Liu | Research Homepage"
+title                    : "Shuo Liu"
 title_separator          : "-"
 name                     : &name "Shuo Liu"
 description              : &description "Shuo's website."   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -45,7 +45,7 @@ author:
   # semantic         : # URL
   # ssrn             : # URL
   # pubmed           : # URL
-  researchgate     : "https://www.researchgate.net/profile/Shuo-Liu-135?ev=hdr_xprf&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSIsInBvc2l0aW9uIjoiZ2xvYmFsSGVhZGVyIn19"
+  researchgate     : "https://www.researchgate.net/profile/Shuo-Liu-135"
   # scopus           : # URL
   # zotero           : # URL
 
