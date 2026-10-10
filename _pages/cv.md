@@ -3,6 +3,7 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+hide_title: true
 redirect_from:
   - /resume
 ---
@@ -11,11 +12,11 @@ redirect_from:
 
 Academic career
 ======
-* Gordon and Betty Moore Postdoctoral Research Associate, Princeton University, Sept. 2025 – present
+* Gordon and Betty Moore Postdoctoral Research Associate, Princeton University, 2025.09 – present
   * Supervisor: Prof. B. Andrei Bernevig
-* Ph.D. in Physics, Institute for Advanced Study, Tsinghua University, 2025
+* Ph.D. in Physics, Institute for Advanced Study, Tsinghua University, 2020.09 – 2025.06
   * Supervisor: Prof. Hong Yao
-* B.S. in Physics, Department of Physics, Beijing Normal University, 2020
+* B.S. in Physics, Department of Physics, Beijing Normal University, 2016.09 – 2020.06
 
 Presentations and Talks
 ======
