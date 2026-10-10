@@ -2,6 +2,7 @@
 permalink: /
 title: Shuo Liu
 author_profile: true
+sidebar_photo_only: true
 redirect_from: 
   - /about/
   - /about.html

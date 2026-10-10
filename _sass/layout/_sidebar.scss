@@ -322,3 +322,28 @@
     }
   }
 }
+
+/* Pages with sidebar_photo_only: true (the home page) show just the photo.
+   On small screens the photo would otherwise be a 36px thumbnail, so show it larger. */
+.author--photo-only .author__avatar {
+  display: block;
+  width: 150px;
+
+  @include breakpoint($large) {
+    width: auto;
+  }
+
+  img {
+    padding: 5px;
+    border: 1px solid var(--global-border-color);
+  }
+}
+
+/* The theme script adds a masthead-sized padding-top to the sidebar whenever the
+   "Follow" button is hidden. Without that button (photo-only sidebar) this would
+   also happen on small screens, so keep the small-screen layout unchanged. */
+@media screen and (max-width: #{$large - 1px}) {
+  .sidebar {
+    padding-top: 0 !important;
+  }
+}

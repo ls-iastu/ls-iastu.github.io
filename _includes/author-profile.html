@@ -4,7 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+<div itemscope itemtype="http://schema.org/Person"{% if page.sidebar_photo_only %} class="author--photo-only"{% endif %}>
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
@@ -14,6 +14,7 @@
     {% endif %}
   </div>
 
+  {% unless page.sidebar_photo_only %}
   <div class="author__content">
     <h3 class="author__name">{{ author.name }}</h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
@@ -173,4 +174,5 @@
       {% endif %}      
     </ul>
   </div>
+  {% endunless %}
 </div>
