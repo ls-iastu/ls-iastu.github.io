@@ -80,23 +80,10 @@
   /* No need to repeat pointer-events and cursor here */
 }
 
-/* Name on the left, navigation links (Home, CV, Publications) on the right */
+/* Navigation links (Home, CV, Publications) aligned to the right */
 .masthead__menu {
   display: flex;
   align-items: center;
-}
-
-.masthead__brand {
-  flex: 0 0 auto;
-  margin-right: 1.5rem;
-  padding: 0.5rem 0;
-  font-weight: 700;
-  color: var(--global-masthead-link-color);
-  white-space: nowrap;
-
-  &:hover {
-    color: var(--global-masthead-link-color-hover);
-  }
 }
 
 .masthead__menu .greedy-nav {
