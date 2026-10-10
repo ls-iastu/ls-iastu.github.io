@@ -6,9 +6,9 @@ permalink: /publication/number-4
 excerpt: ''
 date: 2024-04-09
 venue: 'Physical Review Letters'
-authors: 'Hao-Kai Zhang<sup>*</sup>, Shuo Liu<sup>*</sup>, Shi-Xin Zhang'
+authors: 'Hao-Kai Zhang<sup>*†</sup>, Shuo Liu<sup>*</sup>, Shi-Xin Zhang'
 journal: 'Phys. Rev. Lett. 132, 150603 (2024)'
-arxiv: ''
+arxiv: '2311.01393'
 paperurl: 'https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.150603'
 citation: 'Hao-Kai Zhang<sup>*</sup>, Shuo Liu<sup>*</sup>, Shi-Xin Zhang, Absence of Barren Plateaus in Finite Local-Depth Circuits with Long-Range Entanglement, Phys. Rev. Lett. 132, 150603 (2024).'
 ---

@@ -4,11 +4,13 @@
 
 :root {
   --pub-card-bg       : #ffffff;
-  --pub-card-border   : #e6e8eb;
+  --pub-card-border   : #dde1e6;
   --pub-title-color   : #2f5a8f;
   --pub-author-color  : #6b7280;
   --pub-me-color      : #111111;
   --pub-venue-color   : #374151;
+  --pub-mark-color    : #c0392b;
+  --pub-card-shadow   : 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 html[data-theme="dark"] {
@@ -18,19 +20,40 @@ html[data-theme="dark"] {
   --pub-author-color  : #d4d4d4;
   --pub-me-color      : #ffffff;
   --pub-venue-color   : #eeeeee;
+  --pub-mark-color    : #ff9b8f;
+  --pub-card-shadow   : 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+/* Equal-contribution (asterisk) and corresponding-author (dagger) marks */
+.pub-mark,
+.pub-authors sup {
+  color: var(--pub-mark-color);
+  font-weight: 700;
+}
+
+.pub-authors sup {
+  font-size: 0.9em;
+  line-height: 0;
+  margin-left: 1px;
 }
 
 .pub-note {
-  font-size: $type-size-6;
+  margin: 0.4em 0 0.5em;
+  font-size: 0.9em;
   color: var(--pub-author-color);
+
+  .pub-mark {
+    font-size: 1.1em;
+  }
 }
 
 .pub-item {
-  margin: 0 0 1em;
+  margin: 0 0 1.25em;
   padding: 1em 1.25em;
   background: var(--pub-card-bg);
   border: 1px solid var(--pub-card-border);
   border-radius: 12px;
+  box-shadow: var(--pub-card-shadow);
   line-height: 1.6;
 
   a.pub-title {
