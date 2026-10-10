@@ -1,6 +1,6 @@
 {% comment %}
   One publication entry in three lines:
-    1. title, linked to paperurl (falls back to the arXiv page, then the local permalink)
+    1. title, linked to paperurl (falls back to the arXiv page; plain text if neither is set)
     2. authors, with site.author.name in bold
     3. journal reference, or arXiv number for preprints
   Front matter fields used: title, paperurl, authors, journal, arxiv
@@ -12,13 +12,17 @@
 {% elsif post.arxiv and post.arxiv != "" %}
   {% assign pub_link = "https://arxiv.org/abs/" | append: post.arxiv %}
 {% else %}
-  {% assign pub_link = base_path | append: post.url %}
+  {% assign pub_link = "" %}
 {% endif %}
 {% assign me = site.author.name %}
 {% assign me_bold = "<strong>" | append: me | append: "</strong>" %}
 
 <article class="pub-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
-  <a class="pub-title" href="{{ pub_link }}" itemprop="headline">{{ pub_title }}</a>
+  {% if pub_link != "" %}
+    <a class="pub-title" href="{{ pub_link }}" itemprop="headline">{{ pub_title }}</a>
+  {% else %}
+    <span class="pub-title" itemprop="headline">{{ pub_title }}</span>
+  {% endif %}
   {% if post.authors %}
     <div class="pub-authors">{{ post.authors | replace: me, me_bold }}</div>
   {% endif %}

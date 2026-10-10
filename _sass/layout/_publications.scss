@@ -62,7 +62,8 @@ html[data-theme="dark"] {
   box-shadow: var(--pub-card-shadow);
   line-height: 1.6;
 
-  a.pub-title {
+  a.pub-title,
+  span.pub-title {
     display: block;
     margin-bottom: 0.35em;
     color: var(--pub-title-color);

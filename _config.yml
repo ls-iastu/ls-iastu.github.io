@@ -228,7 +228,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false   # no per-paper pages; papers are listed only on /publications/
     permalink: /:collection/:path/
   portfolio:
     output: true
