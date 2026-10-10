@@ -94,3 +94,98 @@
     }
   }
 }
+
+/* Contact block (left) and links (right), then a divider and the copyright line */
+:root {
+  --footer-name-color  : #374151;
+  --footer-muted-color : #6b7280;
+  --footer-link-color  : #374151;
+  --footer-rule-color  : #dde1e6;
+}
+
+html[data-theme="dark"] {
+  --footer-name-color  : #ffffff;
+  --footer-muted-color : #d4d4d4;
+  --footer-link-color  : #eeeeee;
+  --footer-rule-color  : #5f5f5f;
+}
+
+.site-footer {
+  font-family: $global-font-family;
+  padding-top: 0.6em;
+}
+
+.site-footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em 2.5em;
+  padding-bottom: 1.2em;
+}
+
+.site-footer__contact {
+  color: var(--footer-muted-color);
+  font-size: 0.85em;
+  line-height: 1.7;
+}
+
+.site-footer__name {
+  margin-bottom: 0.25em;
+  color: var(--footer-name-color);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.page__footer a.site-footer__underline {
+  text-decoration: underline;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em 1.5em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9em;
+
+  a {
+    color: var(--footer-link-color);
+  }
+}
+
+.site-footer__copyright {
+  padding-top: 1em;
+  border-top: 1px solid var(--footer-rule-color);
+  color: var(--footer-muted-color);
+  font-size: 0.75em;
+}
+
+/* On wide screens, line the footer up with the main content column so it
+   never sits under the fixed sidebar, and keep the sidebar above the footer
+   so its links stay visible when the page is scrolled to the bottom. */
+.page__footer footer {
+  max-width: $large;
+
+  @include breakpoint($x-large) {
+    max-width: $x-large;
+  }
+}
+
+.site-footer {
+  @include breakpoint($large) {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+  }
+}
+
+/* #main has an entry animation, which traps the sidebar's stacking order inside it,
+   so raise #main itself. It is transparent and ends above the footer, so only the
+   fixed sidebar overlaps the footer area. */
+#main {
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    position: relative;
+    z-index: 1;
+  }
+}

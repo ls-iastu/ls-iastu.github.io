@@ -30,6 +30,8 @@ author:
   # location         : "Earth"
   employer         : "Princeton University"
   employer_url     : "https://phy.princeton.edu/people/shuo-liu"
+  department       : "Department of Physics"   # shown in the footer
+  address          : "Princeton, NJ 08544, USA" # shown in the footer
   uri              : # URL
   email            : "sl6097@princeton.edu" 
 
