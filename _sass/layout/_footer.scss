@@ -189,3 +189,15 @@ html[data-theme="dark"] {
     z-index: 1;
   }
 }
+
+/* On full-width pages, line the footer up with the full content width too */
+.page__footer--full .site-footer {
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

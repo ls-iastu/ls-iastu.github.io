@@ -146,3 +146,15 @@ html[data-theme="dark"] {
     font-size: 1.15em;
   }
 }
+
+/* Pages without the sidebar (front matter full_width: true) use the whole content width */
+.archive.archive--full {
+  @include breakpoint($large) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
