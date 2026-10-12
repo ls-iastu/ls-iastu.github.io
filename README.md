@@ -33,6 +33,8 @@ paperurl: 'https://doi.org/...'                   # leave empty for preprints
 ---
 ```
 
+For a paper that is accepted but not yet out, set `journal` to e.g. `'Accepted in Phys. Rev. Lett. (2026)'` and leave `paperurl` empty; the title then links to arXiv and the arXiv number is shown after the journal line. Add `pin: true` to list a paper first within its year.
+
 `<sup>*</sup>` marks joint first authors and `<sup>†</sup>` marks corresponding authors. Shuo Liu's name is bolded automatically. Journal articles are grouped by the year in `date`; preprints are listed after them, newest first.
 
 ## Credits

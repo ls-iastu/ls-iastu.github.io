@@ -17,7 +17,7 @@ hide_title: true
 {% include base_path %}
 
 <!--
-  Journal articles: grouped by year (from each file's `date`), newest first.
+  Journal articles: grouped by year (from each file's `date`), newest first; files with `pin: true` come first in their year.
   Preprints: files with `category: preprints`, newest first, no year grouping.
   When a preprint is published, change its category to `manuscripts` and fill in `journal` and `paperurl`.
 -->
@@ -28,8 +28,14 @@ hide_title: true
 {% assign pubs_by_year = published | group_by_exp: "pub", "pub.date | date: '%Y'" %}
 {% for year in pubs_by_year %}
   <h3 class="pub-year" id="{{ year.name }}">{{ year.name }}</h3>
-  {% for post in year.items %}
+  {% assign pinned = year.items | where_exp: "p", "p.pin == true" %}
+  {% for post in pinned %}
     {% include archive-single-publication.html %}
+  {% endfor %}
+  {% for post in year.items %}
+    {% unless post.pin == true %}
+      {% include archive-single-publication.html %}
+    {% endunless %}
   {% endfor %}
 {% endfor %}
 

@@ -27,7 +27,7 @@
     <div class="pub-authors">{{ post.authors | replace: me, me_bold }}</div>
   {% endif %}
   {% if post.journal and post.journal != "" %}
-    <div class="pub-venue">{{ post.journal }}</div>
+    <div class="pub-venue">{{ post.journal }}{% if post.paperurl == "" and post.arxiv and post.arxiv != "" %} &middot; <a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv:{{ post.arxiv }}</a>{% endif %}</div>
   {% elsif post.arxiv and post.arxiv != "" %}
     <div class="pub-venue"><a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv:{{ post.arxiv }}</a></div>
   {% endif %}
