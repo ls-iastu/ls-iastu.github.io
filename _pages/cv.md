@@ -24,6 +24,8 @@ Presentations and Talks
 
 ### 2026
 
+* Anthony J. Leggett Institute for Condensed Matter Theory Seminar, University of Illinois Urbana-Champaign, Nov. 2026
+  * Analytical solutions of the infinite-*U* Hubbard model on a triangular ladder: Hole–magnon bound ground states and RVB-type ground states
 * APS March Meeting 2026, Mar. 2026
   * Hilbert space fragmentation and exact solutions in the 2D infinite-*U* Hubbard model
 
