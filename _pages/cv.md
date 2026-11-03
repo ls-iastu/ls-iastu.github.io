@@ -19,6 +19,11 @@ Academic career
   * Supervisor: [Prof. Hong Yao](https://www.ias.tsinghua.edu.cn/en/info/1059/1169.htm)
 * B.S. in Physics, Department of Physics, Beijing Normal University, 2016.09 – 2020.06
 
+Conference Organization
+======
+* [AI-Accelerated Quantum Materials: From Method Development to Novel Materials (AAQM)](https://pcts.princeton.edu/events/2026/ai-accelerated-quantum-materials-method-development-novel-materials-aaqm), Princeton Center for Theoretical Science, Princeton University, Nov. 9–11, 2026
+  * Co-organized with B. Andrei Bernevig, Leslie Schoop, Yi Jiang (Princeton University), Jiabin Yu, Benjamin Geisler, Richard Hennig, and Peter Hirschfeld (University of Florida)
+
 Presentations and Talks
 ======
 
